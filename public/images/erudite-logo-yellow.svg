@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="120" viewBox="0 0 920 120" role="img" aria-labelledby="title desc">
+  <title id="title">Навчальний центр — Ерудит</title>
+  <desc id="desc">Логотип із відкритою книгою та підписом «При українській школі «Ерудит» у Відні»</desc>
+  <g fill="none" stroke="#FFCD57" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round" transform="translate(9 12)">
+    <path d="M42 19C30 11 17 10 6 13v66c14-3 27-1 36 7 10-8 23-10 37-7V13c-11-3-24-2-37 6Z"/>
+    <path d="M42 19v67M6 13H1v73c16-3 30-1 41 7 11-8 25-10 41-7V13h-4"/>
+    <path d="M15 26c7-1 13 1 19 4M15 39c7-1 13 1 19 4M15 52c7-1 13 1 19 4M15 65c7-1 13 1 19 4" stroke-width="2.7"/>
+  </g>
+  <g fill="#FFCD57" font-family="Arial, Helvetica, sans-serif">
+    <text x="117" y="53" font-size="36" font-weight="700">Навчальний центр</text>
+    <text x="118" y="86" font-size="24" font-weight="400">При українській школі «Ерудит» у Відні</text>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 620px;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      90deg,
+      #101c34 0%,
+      rgba(16, 28, 52, 0.98) 28%,
+      rgba(16, 28, 52, 0.7) 55%,
+      rgba(16, 28, 52, 0.05) 100%
+    ),
+    url("/images/hero-erudite.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  min-height: inherit;
+}
+
+.hero__content {
+  width: min(100%, 620px);
+  padding-block: 100px;
+}
+
+.hero__eyebrow {
+  margin: 0 0 20px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero__title {
+  margin: 0 0 24px;
+  font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero__description {
+  max-width: 500px;
+  margin: 0 0 36px;
+  color: #d3dceb;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 800;
+  transition: background-color 0.2s ease;
+}
+
+.hero__button:hover {
+  background-color: #ffe092;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 560px;
+  }
+
+  .hero__content {
+    padding-block: 80px;
+  }
+
+  .hero__title {
+    letter-spacing: -1px;
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+}
