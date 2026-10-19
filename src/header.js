@@ -53,7 +53,7 @@ export function initHeader() {
   window.addEventListener(
     "resize",
     () => {
-      if (window.innerWidth > 900) {
+      if (window.innerWidth > 1024) {
         closeMenu();
       }
     },

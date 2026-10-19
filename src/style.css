@@ -2,7 +2,7 @@
 
 :root {
   font-family: "Manrope", sans-serif;
-  color: #ffffff;
+  color: #202b3e;
   background-color: #ffffff;
 
   --color-primary: #101c34;
@@ -15,7 +15,9 @@
   --container-width: 1200px;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -30,7 +32,8 @@ body {
 
 button,
 input,
-textarea {
+textarea,
+select {
   font: inherit;
 }
 
