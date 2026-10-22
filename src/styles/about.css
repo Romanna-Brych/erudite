@@ -38,6 +38,8 @@
   line-height: 1.7;
 }
 
+/* Cards */
+
 .about__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -48,9 +50,9 @@
 }
 
 .about__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-rows: 54px 1fr;
+  align-items: start;
   gap: 28px;
   min-height: 230px;
   padding: 28px;
@@ -70,26 +72,33 @@
   background-color: #ee9418;
 }
 
-.about__icon {
+/* Icons */
+
+.about__icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgb(255 255 255 / 35%);
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgb(255 255 255 / 25%);
   border-radius: 12px;
   background-color: rgb(255 255 255 / 15%);
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 1;
 }
 
-.about__item--code .about__icon {
-  font-size: 22px;
+.about__icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  color: #fff;
 }
+
+/* Card content */
 
 .about__item-content {
-  margin-top: auto;
+  align-self: end;
+  min-width: 0;
 }
 
 .about__item-title {
@@ -100,6 +109,7 @@
 }
 
 .about__description {
+  min-height: 3.2em;
   margin: 0;
   color: rgb(255 255 255 / 90%);
   font-size: 14px;
@@ -107,22 +117,29 @@
 }
 
 /* Tablet: 768–1023px */
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .about__list {
     gap: 14px;
   }
 
   .about__item {
-    min-height: 220px;
+    min-height: 240px;
     padding: 22px;
+    gap: 24px;
   }
 
   .about__item-title {
     font-size: 19px;
   }
+
+  .about__description {
+    min-height: 4.8em;
+  }
 }
 
 /* Mobile: up to 767px */
+
 @media (max-width: 767px) {
   .about {
     padding: 56px 0;
@@ -146,25 +163,23 @@
   }
 
   .about__item {
-    flex-direction: row;
-    align-items: flex-start;
+    grid-template-columns: 54px minmax(0, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
     gap: 18px;
     min-height: auto;
     padding: 22px;
   }
 
-  .about__icon {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    font-size: 26px;
-  }
-
   .about__item-content {
-    margin-top: 0;
+    align-self: start;
   }
 
   .about__item-title {
     font-size: 19px;
+  }
+
+  .about__description {
+    min-height: 0;
   }
 }

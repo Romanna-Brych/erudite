@@ -50,10 +50,24 @@ export function initHeader() {
     { signal },
   );
 
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (
+        nav.classList.contains("is-open") &&
+        !nav.contains(event.target) &&
+        !burger.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    },
+    { signal },
+  );
+
   window.addEventListener(
     "resize",
     () => {
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth >= 1024) {
         closeMenu();
       }
     },

@@ -112,27 +112,31 @@
 }
 
 .math-club__list li {
-  position: relative;
-  padding-left: 28px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   font-size: 14px;
   line-height: 1.5;
 }
 
-.math-club__list li::before {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.math-club__list li span {
+  min-width: 0;
+}
+
+.math-club__check {
+  display: block;
+  flex: 0 0 19px;
   width: 19px;
   height: 19px;
+  padding: 3px;
   border-radius: 50%;
   background-color: var(--color-accent);
   color: var(--color-primary);
-  content: "✓";
-  font-size: 12px;
-  font-weight: 800;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Форма праворуч */
