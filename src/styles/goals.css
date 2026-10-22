@@ -1,0 +1,154 @@
+.goals {
+  padding: 72px 0;
+  background-color: var(--color-light);
+}
+
+.goals__heading {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+
+.goals__eyebrow {
+  margin: 0 0 12px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.goals__title {
+  max-width: 650px;
+  margin: 0 0 16px;
+  color: var(--color-primary);
+  font-size: clamp(32px, 3.5vw, 46px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.goals__title span {
+  color: var(--color-accent);
+}
+
+.goals__intro {
+  max-width: 550px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Cards */
+
+.goals__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.goals__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 190px;
+  padding: 24px 20px;
+  border: 1px solid #e7edf5;
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.goals__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background-color: #edf2f9;
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.goals__item-title {
+  margin: 0 0 10px;
+  color: var(--color-primary);
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.goals__description {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Tablet: 768–1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .goals__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .goals__item {
+    min-height: 185px;
+    padding: 24px 20px;
+  }
+}
+
+/* Mobile: up to 767px */
+
+@media (max-width: 767px) {
+  .goals {
+    padding: 56px 0;
+  }
+
+  .goals__heading {
+    margin-bottom: 28px;
+  }
+
+  .goals__title {
+    font-size: clamp(30px, 7vw, 36px);
+    letter-spacing: -1px;
+  }
+
+  .goals__intro {
+    font-size: 15px;
+  }
+
+  .goals__list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .goals__item {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+
+  .goals__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 16px;
+    font-size: 28px;
+  }
+
+  .goals__item-title {
+    font-size: 18px;
+  }
+
+  .goals__description {
+    font-size: 14px;
+  }
+}

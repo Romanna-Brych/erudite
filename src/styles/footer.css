@@ -1,0 +1,165 @@
+.footer {
+  padding: 72px 0 0;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 1fr;
+  gap: 64px;
+  padding-bottom: 64px;
+}
+
+/* Логотип і опис */
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.footer__logo img {
+  width: 230px;
+  height: auto;
+}
+
+.footer__description {
+  max-width: 340px;
+  margin: 0 0 24px;
+  color: #bdc9dc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer__location {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Заголовки */
+
+.footer__heading {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+/* Навігація */
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__links a {
+  color: #bdc9dc;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover,
+.footer__links a:focus-visible {
+  color: var(--color-accent);
+}
+
+/* Контакти */
+
+.footer__contacts-text {
+  max-width: 320px;
+  margin: 0 0 24px;
+  color: #bdc9dc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 9px;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 800;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer__button:hover {
+  background-color: #f4bd3e;
+  transform: translateY(-2px);
+}
+
+/* Нижня частина */
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  border-top: 1px solid rgb(255 255 255 / 12%);
+}
+
+.footer__bottom p {
+  margin: 0;
+  color: #8e9bb0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Планшет */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Мобільні */
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 56px;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 48px;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+
+  .footer__heading {
+    margin-bottom: 18px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 20px 0;
+  }
+}
